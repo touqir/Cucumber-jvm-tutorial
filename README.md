@@ -1,3 +1,3 @@
 Cucumber-jvm-tutorial
 =====================
-tutorial and examples
+Tutorials and examples for cucumber-jvm
