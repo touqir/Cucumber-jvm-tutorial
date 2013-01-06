@@ -1,0 +1,17 @@
+package cucumber.examples.java.helloworld;
+
+public class Hello {
+    /*
+     * this variable will hold the greeting
+     * string passed in from the feature file
+     */
+    private final String greeting;
+
+    public Hello(String greeting) {
+        this.greeting = greeting;
+    }
+
+    public String sayHi() {
+        return greeting + " World";
+    }
+}
