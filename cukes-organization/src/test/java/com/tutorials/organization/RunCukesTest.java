@@ -4,6 +4,11 @@ import cucumber.api.junit.Cucumber;
 import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
+
+/*
+ * these are the options passed in
+ * to cucumber when using JUnit
+ */
 @Cucumber.Options(format = {"pretty", "html:target/cucumber-html-report", "json-pretty:target/cucumber-report.json"})
 
 /*
