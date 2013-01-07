@@ -42,7 +42,7 @@ public class GreetingStepDefs {
   public void it_responds_with(String expectedResponse) throws Throwable {
     //verify the appResponse equals the expected Response
     //from the feature file
-    assertEquals(appResponse, expectedResponse);
+    assertEquals(expectedResponse, appResponse);
   }
 
   

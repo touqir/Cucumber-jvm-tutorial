@@ -4,12 +4,12 @@ package com.tutorials.organization;
  * Hello world!
  *
  */
-public class App 
-{
+public class App {
+
     private String username;
 
     public App(String userName) {
-      this.username = userName;      
+      this.username = userName;
     }
 
     public String sayHi() {
