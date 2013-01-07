@@ -1,0 +1,31 @@
+package com.tutorials.organization;
+
+import junit.framework.Test;
+import junit.framework.TestCase;
+import junit.framework.TestSuite;
+
+import com.tutorials.organization.App;
+
+public class AppStepDefs {
+
+  private String appResponse;
+
+  @When("^I ask my app to say hi$")
+  public void I_ask_my_app_to_say_hi() throws Throwable {
+    //create a new app instance
+    App app = new App();
+
+    //call method sayHi() and save the response
+    //in the appResponse variable
+    appResponse = app.sayHi();  
+  }
+
+  @Then("^it responds with \"([^\"]*)\"$")
+  public void it_responds_with(String expectedResponse) throws Throwable {
+    //verify the appResponse equals the expected Response
+    //from the feature file
+    assertEquals(appResponse, expectedResponse);
+  }
+
+  
+}
