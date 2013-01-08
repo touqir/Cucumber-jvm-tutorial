@@ -47,16 +47,24 @@ public class StatsStepDefs {
    *  @return list of integers for the app
    */
   private List<Integer> convertToInts(DataTable values) {
+    //initialize empty list
     List<Integer> intValues = new ArrayList<Integer>();
+
+    //iterate through the values in the cells
     for (List<String> val : values.cells(1)) {
+      //catch the exception so we can tell the user what went wrong
       try {
+        //get the string value and parse it to an Integer
         Integer intVal = Integer.parseInt(val.get(0));
+        //add the Integer to the list
         intValues.add(intVal);
       } catch (Exception e) {
         System.out.println("Error: Problem parsing '" + val.get(0) + "' to an Integer");
         e.printStackTrace();
-      }
-    }
+      }//end catch block
+    }//end for loop
+
+    //return the populated list of Integer values
     return intValues;
   }
 

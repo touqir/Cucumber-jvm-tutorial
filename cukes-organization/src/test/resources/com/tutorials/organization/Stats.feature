@@ -1,11 +1,11 @@
-
+@stats
 Feature: compute statistics
 
 
   Scenario: compute mean
     When I compute the mean of the numbers:
     | values |
-    | 3      |
+    | 3      | 
     | 11     |
     | 7      |
     | 46     |
@@ -23,6 +23,8 @@ Feature: compute statistics
     | 27     |
     | 67     |
     | 64     |
+    | 44     |
+    | 36     |
 
-    Then the result should be "23.71"
+    Then the result should be "20.156"
 

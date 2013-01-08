@@ -1,19 +1,20 @@
-
+@simpleArithmetic
 Feature: simple arithmetic
 
-  Scenario: addition
+Background:
     Given the number 5
+
+ 
+  Scenario: addition
     When I add 10
     Then the result should be 15
 
 
   Scenario: subtraction
-    Given the number 7
     When I subtract 3
-    Then the result should be 4
+    Then the result should be 2
 
 
   Scenario: multiplication
-    Given the number 10
     When I multiply by 2
-    Then the result should be 20
+    Then the result should be 10

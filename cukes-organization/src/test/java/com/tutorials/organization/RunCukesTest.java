@@ -9,7 +9,11 @@ import org.junit.runner.RunWith;
  * these are the options passed in
  * to cucumber when using JUnit
  */
-@Cucumber.Options(format = {"pretty", "html:target/cucumber-html-report", "json-pretty:target/cucumber-report.json"})
+@Cucumber.Options(
+
+	format = {"pretty", "html:target/cucumber-html-report", "json-pretty:target/cucumber-report.json"}
+//        ,tags = { "@spirits" }
+)
 
 /*
  * this class is the class called by the
@@ -21,3 +25,22 @@ import org.junit.runner.RunWith;
  */
 public class RunCukesTest {
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

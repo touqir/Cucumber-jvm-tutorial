@@ -11,6 +11,8 @@ public class NumberCruncher {
     this.initialNumber = num;
   }
 
+  /* ----------- Begin Methods for Simple Arithemtic ----------- */
+
   public int add(int num) {
     return this.initialNumber + num;
   }
@@ -22,6 +24,9 @@ public class NumberCruncher {
   public int multiply(int num) {
     return this.initialNumber * num;
   }
+
+  /* ----------- End Methods for Simple Arithemtic ----------- */
+
 
   public double getMean(List<Integer> values) {
     return calculateMean(values);
